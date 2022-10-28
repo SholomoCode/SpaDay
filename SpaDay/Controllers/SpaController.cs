@@ -55,7 +55,15 @@ namespace SpaDay.Controllers
                     appropriateFacials.Add(facials[i]);
                 }
             }
+            
+            ViewBag.ClientName = name;
+            ViewBag.Skintype = skintype;
+            ViewBag.appropriateFacials = appropriateFacials;
+            ViewBag.Manipedi = manipedi;
             return View();
+
+            
+
         }
 
 
